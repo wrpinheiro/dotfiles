@@ -24,7 +24,7 @@ alias psgrep='ps -ef | grep'
 alias mjr='mvn jetty:run'
 alias mjrd='mvnDebug jetty:run'
 alias s.='subl .'
-export WM_PROJETOS='/opt/projetos'
+export WM_PROJETOS=$HOME/projetos
 
 alias wm-app='cd $WM_PROJETOS/wm-app-atlantico'
 alias depot='cd /opt/projetos/depot-agile-rails/'
