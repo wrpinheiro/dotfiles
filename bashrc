@@ -8,6 +8,7 @@ export PS1="\h:[\u] \w \$ "
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+eval "$(jenv init -)"
 
 export CLICOLOR=1
 
@@ -43,7 +44,7 @@ export MAVEN_OPTS="-Xmx1024m -Xms512m"
 source ~/.git-prompt.sh
 PS1="\h:[\u] \w\$(__git_ps1) $ "
 
-export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/opt/instantclient_11_2/
+export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/opt/instantclient_11_2
 
 MYSQL=/usr/local/mysql/bin
 
