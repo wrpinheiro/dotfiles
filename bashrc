@@ -1,6 +1,4 @@
-export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
-
-export M2_HOME=/opt/maven
+export M3_HOME=/usr/local/Cellar/maven/3.2.5
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$M2_HOME/bin:~/bin:$PATH
 
@@ -9,6 +7,8 @@ export PS1="\h:[\u] \w \$ "
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 eval "$(jenv init -)"
+
+export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 
 export CLICOLOR=1
 
