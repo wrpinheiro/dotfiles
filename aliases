@@ -22,4 +22,5 @@ alias javalee='cd $WM_PROJETOS/javalee'
 alias coopera='cd $WM_PROJETOS/coopera-sac'
 alias mailer='cd $WM_PROJETOS/atlantico-mailer'
 alias pt='cd $WM_PROJETOS/performance-test'
-
+alias caravela='cd $WM_PROJETOS/caravela'
+alias subl.='subl .'

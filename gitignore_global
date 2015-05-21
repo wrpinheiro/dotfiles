@@ -1,3 +1,12 @@
 *~
 .DS_Store
 customer-services-frontend-ruby-2-1-1-rails-4.1.2
+.java-version
+snippets.txt
+
+.rbenv-gemsets
+.sass-cache/
+app/assets/images/workitem_style_button-sb893e43fda.png
+dump.rdb
+api-docs.json
+trinidad.sh

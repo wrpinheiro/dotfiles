@@ -12,6 +12,8 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 export CLICOLOR=1
 export WM_PROJETOS=$HOME/projetos
 export MAVEN_OPTS="-Xmx1024m -Xms512m"
+export JMETER_HOME=/opt/jmeter
+export PATH=$JMETER_HOME/bin:$PATH
 
 source ~/.git-prompt.sh
 PS1="\h:[\u] \w\$(__git_ps1) $ "
@@ -39,6 +41,8 @@ export ORACLE_HOME=/opt/instantclient_11_2
 export TNS_ADMIN=$ORACLE_HOME/network/admin
 
 export CLASSPATH=$CLASSPATH:$ORACLE_HOME
+
+eval "$(boot2docker shellinit)"
 
 source ~/.aliases
 
