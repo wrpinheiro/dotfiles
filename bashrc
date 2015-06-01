@@ -1,12 +1,15 @@
-export M3_HOME=/usr/local/Cellar/maven/3.2.5
+export M3_HOME=/opt/maven
 
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$M2_HOME/bin:~/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$M3_HOME/bin:~/bin:$PATH
 
 export PS1="\h:[\u] \w \$ "
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 eval "$(jenv init -)"
+
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
 
 export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 export CLICOLOR=1
@@ -46,3 +49,6 @@ eval "$(boot2docker shellinit)"
 
 source ~/.aliases
 
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
