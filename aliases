@@ -24,3 +24,6 @@ alias mailer='cd $WM_PROJETOS/atlantico-mailer'
 alias pt='cd $WM_PROJETOS/performance-test'
 alias caravela='cd $WM_PROJETOS/caravela'
 alias subl.='subl .'
+
+alias mysql_start='mysql.server start'
+alias mysql_stop='mysql.server stop'
