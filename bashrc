@@ -2,7 +2,7 @@ export M3_HOME=/opt/maven
 
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$M3_HOME/bin:~/bin:$PATH
 
-export PS1="\h:[\u] \w \$ "
+export PS1="$PS1\$(git-radar --bash --fetch)"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
@@ -11,12 +11,14 @@ eval "$(jenv init -)"
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export CLICOLOR=1
 export WM_PROJETOS=$HOME/projetos
 export MAVEN_OPTS="-Xmx1024m -Xms512m"
 export JMETER_HOME=/opt/jmeter
 export PATH=$JMETER_HOME/bin:$PATH
+
+export HSQLDB_HOME=/opt/hsqldb
 
 source ~/.git-prompt.sh
 PS1="\h:[\u] \w\$(__git_ps1) $ "
@@ -45,10 +47,10 @@ export TNS_ADMIN=$ORACLE_HOME/network/admin
 
 export CLASSPATH=$CLASSPATH:$ORACLE_HOME
 
-eval "$(boot2docker shellinit)"
-
-source ~/.aliases
-
+eval "$(docker-machine env dev)"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+source ~/.aliases
+
