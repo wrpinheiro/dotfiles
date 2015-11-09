@@ -1,0 +1,7 @@
+export ANTLR_HOME=/usr/local/Cellar/antlr/4.5.1
+
+alias antlr='/usr/local/bin/antlr4'
+alias grun='java -classpath $ANTLR_HOME/antlr-4.5.1-complete.jar:. org.antlr.v4.gui.TestRig "$@"'
+
+export CLASSPATH=$ANTLR_HOME/antlr-4.5.1-complete.jar:.
+
