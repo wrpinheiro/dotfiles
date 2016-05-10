@@ -54,3 +54,15 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 source ~/.aliases
 
+
+# added by travis gem
+[ -f /Users/wpinhei/.travis/travis.sh ] && source /Users/wpinhei/.travis/travis.sh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/wpinhei/.sdkman"
+[[ -s "/Users/wpinhei/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/wpinhei/.sdkman/bin/sdkman-init.sh"
+
+
+export NVM_DIR=~/.nvm
+. $(brew --prefix nvm)/nvm.sh
+
