@@ -25,3 +25,5 @@ alias mysql_stop='mysql.server stop'
 alias kill_chrome='ps -ef | grep -i chrome | awk "{print \$2}" | xargs kill -9'
 
 alias routes='bash ~/.routes'
+
+alias ports='sudo lsof -i -P | grep -i "listen"'
