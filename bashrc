@@ -47,13 +47,10 @@ export TNS_ADMIN=$ORACLE_HOME/network/admin
 
 export CLASSPATH=$CLASSPATH:$ORACLE_HOME
 
-eval "$(docker-machine env dev)"
-
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 source ~/.aliases
-
 
 # added by travis gem
 [ -f /Users/wpinhei/.travis/travis.sh ] && source /Users/wpinhei/.travis/travis.sh
@@ -62,7 +59,8 @@ source ~/.aliases
 export SDKMAN_DIR="/Users/wpinhei/.sdkman"
 [[ -s "/Users/wpinhei/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/wpinhei/.sdkman/bin/sdkman-init.sh"
 
-
 export NVM_DIR=~/.nvm
 . $(brew --prefix nvm)/nvm.sh
 
+source ~/.docker-world
+dm-eval

@@ -1,0 +1,27 @@
+#!/bin/bash
+##
+# Defines useful alias to work with docker
+##
+
+# docker things
+alias dps='docker ps'
+
+# docker-machine things
+alias dm='docker-machine'
+alias dmc='dm create --driver virtualbox dev'
+alias dmr='dm restart'
+
+alias dm-eval='eval "$(docker-machine env dev)"'
+alias dm-regen='docker-machine --debug regenerate-certs -f dev'
+
+alias routes='fix-routes'
+
+fix-routes() {
+  sudo route delete 192.168.99.0/24
+  sudo route -n add 192.168.99.0/24 -interface vboxnet0
+}
+
+# docker-compose things
+alias dcb='docker-compose build'
+alias dcu='docker-compose up'
+alias dcr='docker-compose rm'
