@@ -5,11 +5,11 @@
 
 ## Variables
 
-dir=~/dotfiles                    # dotfiles directory
-olddir=~/dotfiles_old             # old dotfiles backup directory
+dir=$(pwd)                # dotfiles directory
+olddir=$(pwd)_old         # old dotfiles backup directory
 
 # list of files/folders to symlink in homedir
-files="aliases activemqrc antlr bash_profile bashrc gemrc git-prompt.sh gitconfig gitignore_global gitk docker-world"
+files="aliases activemqrc antlr bash_profile bashrc gemrc git-prompt.sh gitconfig gitignore_global gitk docker-world tmux.conf"
 
 ##########
 

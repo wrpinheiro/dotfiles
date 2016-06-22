@@ -1,3 +1,7 @@
+alias subl='reattach-to-user-namespace subl'
+alias stree='reattach-to-user-namespace stree'
+alias open='reattach-to-user-namespace open'
+
 alias l='ls -Flah'
 alias ..='cd ..'
 alias ...='.. ; ..'
@@ -27,3 +31,5 @@ alias kill_chrome='ps -ef | grep -i chrome | awk "{print \$2}" | xargs kill -9'
 alias routes='bash ~/.routes'
 
 alias ports='sudo lsof -i -P | grep -i "listen"'
+
+alias updatedb='sudo /usr/libexec/locate.updatedb'
